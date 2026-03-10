@@ -12,7 +12,7 @@ The logic behind my code:
 - Create a function that would process the packet. Within this function
    - Begin by checking whether the packet has an IP layer, since not all packets contain IP addresses
    - If it does, extract the source IP,destination IP and protocol number and convert the protocol number into a readable name (TCP,UDP,ICMP or OTHER)
-   - Check if the packet contains a payload and dislay it, otherwise display none
+   - Check if the packet contains a payload and display it, otherwise display none
  - Call Scapy's sniff() function, specifying how many packets to capture and which function to run for each packet
 ## How to run 
  1. Install dependencies: pip install scapy
